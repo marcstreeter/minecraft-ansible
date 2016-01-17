@@ -1,0 +1,25 @@
+---
+#- name: Establishing Temp Folder Name
+#- set_fact: temp_folder="spigot-tmp-{{ ansible_date_time.epoch }}"
+
+- name: Downloading Spigot BuildTools
+  get_url:
+    url: '{{ spigot_build_jar_url }}'
+    dest: '{{ spigot_build_downloads_path }}/{{ spigot_build_jar_filename }}'
+
+- name: create temp build folder
+  file: >
+    path="{{ spigot_build_temp_path }}/1234"
+    state=directory
+
+
+- name: Copy Downloaded Spigot BuildTools to Temp folder
+  command: "cp {{ spigot_build_downloads_path }}/{{ spigot_build_jar_filename }} {{ spigot_build_temp_path }}/1234/{{ spigot_build_jar_filename }}"
+
+- name: Building Spigot from download in Temp folder
+  command: "java -jar {{ spigot_build_jar_filename }}"
+  args:
+    chdir: "{{ spigot_build_temp_path }}/1234/"
+
+- name: Copying Built Spigot to Spigot Jar Directory
+  shell: "cp {{ spigot_build_temp_path }}/1234/Spigot/Spigot-Server/target/spigot*.jar {{ spigot_jar_file_path }}"

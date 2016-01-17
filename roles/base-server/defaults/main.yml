@@ -7,3 +7,6 @@ minecraft_nfs_mount_point: /mnt/minecraft-nfs
 minecraft_home: /var/lib/minecraft
 # Minecraft lib directory
 minecraft_lib: /usr/local/lib/minecraft
+# Minecraft Server System user
+minecraft_user_pass: "creeper"
+minecraft_user_name: "minecraft"

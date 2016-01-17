@@ -1,11 +1,21 @@
 ---
 # Filename of the Spigot jar
-spigot_jar: 'spigot-1.8.3.jar'
+spigot_build_jar_filename: 'BuildTools.jar'
+spigot_jar_filename: 'spigot.jar'
+spigot_root_path: '/usr/local/lib/minecraft'
+spigot_files_path: '{{ spigot_root_path }}/spigot'
+spigot_build_path: '{{ spigot_files_path }}/build'
+spigot_build_temp_path: '{{ spigot_build_path }}/tmp'
+spigot_build_downloads_path: '{{ spigot_build_path }}/downloads'
+spigot_build_jars_path: '{{ spigot_build_path }}/jars'
+spigot_patches_path: '{{ spigot_files_path }}/patches'
 # Path for the Spigot jar - this default is the location used by the build-spigot.sh script
-spigot_jar_path: '.spigot/build'
+spigot_build_jar_url: 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
+spigot_jar_file_path: '{{ spigot_build_jars_path }}/{{ spigot_jar_filename }}'
+plugin_path: '/var/lib/minecraft/plugins/'
 # What version Spigot patch to apply
 spigot_patch_version: '20141113a'
 # MD5 checksum of the patch being applied
 spigot_patch_md5: '12ace759005798adf91d9fe4675fff48'
 # MD5 checksum of the finished, patched jar file
-spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32'
+spigot_patched_jar_md5: '870c9021be261bd285c96s6c642b23c32'

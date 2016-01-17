@@ -1,3 +1,0 @@
----
-- name: Copy Spigot jar
-  copy: src={{ spigot_jar_path }}/{{ spigot_jar }} dest=/usr/local/lib/minecraft/spigot/{{ spigot_jar }} owner=root group=root

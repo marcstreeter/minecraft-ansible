@@ -1,0 +1,44 @@
+---
+- name: Create Spigot directory
+  file: >
+    path="{{ spigot_files_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root
+- name: Creating Spigot Build Directory
+  file: >
+    path="{{ spigot_build_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root
+- name: Create Spigot Jars directory
+  file: >
+    path="{{ spigot_build_jars_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root
+- name: Create Spigot Patches directory
+  file: >
+    path="{{ spigot_patches_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root
+- name: Creating Spigot Temp Directory
+  file: >
+    path="{{ spigot_build_temp_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root
+
+- name: Creating Spigot Downloads Directory
+  file: >
+    path="{{ spigot_build_downloads_path }}"
+    recurse=yes
+    state=directory
+    owner=root
+    group=root

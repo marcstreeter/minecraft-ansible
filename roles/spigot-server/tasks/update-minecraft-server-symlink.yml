@@ -1,3 +1,6 @@
 ---
 - name: Switch the server symlink to a Spigot version
-  file: src=/usr/local/lib/minecraft/spigot/{{ spigot_jar }} dest=/usr/local/lib/minecraft/minecraft_server.jar state=link
+  file:
+    src: '{{ spigot_jar_file_path }}'
+    dest: '{{ spigot_root_path }}/minecraft_server.jar'
+    state: link

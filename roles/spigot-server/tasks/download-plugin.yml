@@ -1,6 +1,13 @@
 ---
+- name: Create Plugin Directory
+  file:
+    path: "{{ plugin_path }}"
+    state: directory
 - name: Download plugin {{ plugin_filename }}
-  get_url: url={{ plugin_url }} dest=/var/lib/minecraft/plugins/{{ plugin_filename }}
+  get_url:
+    url: "{{ plugin_url }}"
+    dest: "{{ plugin_path }}/{{ plugin_filename }}"
+  become: yes
 - name: Check {{ plugin_filename }} md5
   stat: path=/var/lib/minecraft/plugins/{{ plugin_filename }}
   register: plugin

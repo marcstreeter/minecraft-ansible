@@ -1,3 +1,9 @@
 ---
 - name: Create minecraft user
-  user: name=minecraft home={{ minecraft_home }} createhome=no system=yes shell=/bin/false
+  user:
+    name: "{{ minecraft_user_name }}"
+    home: "{{ minecraft_home }}"
+    createhome: no
+    system: yes
+    shell: /bin/false
+    password: "{{ minecraft_user_pass }}"
