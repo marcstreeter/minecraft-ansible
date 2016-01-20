@@ -8,5 +8,6 @@ minecraft_home: /var/lib/minecraft
 # Minecraft lib directory
 minecraft_lib: /usr/local/lib/minecraft
 # Minecraft Server System user
+minecraft_server_icon_file_name: "server-icon.png"
 minecraft_user_pass: "creeper"
 minecraft_user_name: "minecraft"
