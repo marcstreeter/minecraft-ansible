@@ -1,0 +1,9 @@
+---
+- name: Uploading server icon
+  copy:
+    src:  "../files/server-icon.png"
+    dest: "{{ minecraft_server_icon_file_path }}"
+    owner: root
+    group: root
+    mode: 644
+    backup: yes
