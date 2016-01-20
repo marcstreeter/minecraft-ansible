@@ -9,9 +9,8 @@
     dest: "{{ plugin_path }}/{{ plugin_filename }}"
   become: yes
 - name: Check {{ plugin_filename }} md5
-  stat: path=/var/lib/minecraft/plugins/{{ plugin_filename }}
+  stat: path={{ plugin_path }}/{{ plugin_filename }}
   register: plugin
 - name: Fail if {{ plugin_filename }} md5 is incorrect
-  fail: msg="Plugin {{ plugin_filename }} md5 is not correct"
+  fail: msg="Plugin md5 is not valid"
   when: plugin.stat.md5 != '{{ plugin_md5 }}'
-
