@@ -1,0 +1,54 @@
+- {
+    include: download-plugin.yml,
+    plugin_filename: "PermissionsBukkit-2.3.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/789/44/PermissionsBukkit-2.3.jar",
+    plugin_md5: "b01770e7e66038e808c3624769d33e95"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Multiverse-Core-2.5.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/807/512/Multiverse-Core-2.5.jar",
+    plugin_md5: "3848d54650faf2dc24f12459093311c9"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Multiverse-Portals-2.5.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/771/760/Multiverse-Portals-2.5.jar",
+    plugin_md5: "e6b1bc27deaaa739747bf58099c6b80b"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Vault-1.5.6.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/894/359/Vault.jar",
+    plugin_md5: "ff7a7b7233146b002727dfa238c8420e"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "WorldGuard6.1.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/881/691/worldguard-6.1.jar",
+    plugin_md5: "ebd40ac235e50274df60e1620b5e8735"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "WorldEdit6.1.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/880/435/worldedit-bukkit-6.1.jar",
+    plugin_md5: "13749e1701499d379765bb218191035a"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "USkyBlock-2.5.7.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/907/504/uSkyBlock.jar",
+    plugin_md5: "f4a9355246b383c25a5e456dd47faba6"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "EssentialsX-2.0.1.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/906/939/EssentialsX-2.0.1.jar",
+    plugin_md5: "672a5ee5dec042bc4d9b22c95ede9bc6"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "SkyWars1.0.0.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/903/664/SkyWars1.0.0.jar",
+    plugin_md5: "e3bfa0965fda6a70ce124d6c91e77def"
+  }
