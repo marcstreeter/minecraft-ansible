@@ -8,3 +8,4 @@
 - include: copy-minecraft-eula.yml
 - include: create-minecraft-lib-directory.yml
 - include: create-minecraft-upstart-conf.yml
+- include: upload-server-icon.yml
