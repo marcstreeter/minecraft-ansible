@@ -12,7 +12,6 @@ spigot_patches_path: '{{ spigot_files_path }}/patches'
 # Path for the Spigot jar - this default is the location used by the build-spigot.sh script
 spigot_build_jar_url: 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar'
 spigot_jar_file_path: '{{ spigot_build_jars_path }}/{{ spigot_jar_filename }}'
-plugin_path: '/var/lib/minecraft/plugins/'
 # What version Spigot patch to apply
 spigot_patch_version: '20141113a'
 # MD5 checksum of the patch being applied
