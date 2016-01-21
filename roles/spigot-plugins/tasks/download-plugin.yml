@@ -14,3 +14,5 @@
 - name: Fail if {{ plugin_filename }} md5 is incorrect
   fail: msg="Plugin md5 is not valid"
   when: plugin.stat.md5 != '{{ plugin_md5 }}'
+
+# add a way to download junk via casperjs when wget doesn't work@!

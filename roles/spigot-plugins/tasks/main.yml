@@ -52,12 +52,15 @@
 #    plugin_url: "http://dev.bukkit.org/media/files/903/664/SkyWars1.0.0.jar",
 #    plugin_md5: "e3bfa0965fda6a70ce124d6c91e77def"
 #  }
-- {
-    include: download-plugin.yml,
-    plugin_filename: "SkyWarsReloaded2.8.5.jar",
-    plugin_url: "https://www.spigotmc.org/resources/skywarsreloaded.15464/download?version=63881",
-    plugin_md5: "4bc003a590540a6a0b32b1e56fc18750"
-  }
+#- {  # this does work but cannot download via this link because they have something that prevents it
+      # idea is to offer different way of downloading via casperjs
+      # http://stackoverflow.com/questions/19199641/casperjs-download-csv-file
+      # https://www.spigotmc.org/threads/unable-to-wget-resources-503-service-temporarily-unavailable.56812/
+#    include: download-plugin.yml,
+#    plugin_filename: "SkyWarsReloaded2.8.5.jar",
+#    plugin_url: "https://www.spigotmc.org/resources/skywarsreloaded.15464/download?version=63881",
+#    plugin_md5: "4bc003a590540a6a0b32b1e56fc18750"
+#  }
 
 
 
