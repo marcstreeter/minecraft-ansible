@@ -46,9 +46,20 @@
     plugin_url: "http://dev.bukkit.org/media/files/906/939/EssentialsX-2.0.1.jar",
     plugin_md5: "672a5ee5dec042bc4d9b22c95ede9bc6"
   }
+#- {  # doesnt work
+#    include: download-plugin.yml,
+#    plugin_filename: "SkyWars1.0.0.jar",
+#    plugin_url: "http://dev.bukkit.org/media/files/903/664/SkyWars1.0.0.jar",
+#    plugin_md5: "e3bfa0965fda6a70ce124d6c91e77def"
+#  }
 - {
     include: download-plugin.yml,
-    plugin_filename: "SkyWars1.0.0.jar",
-    plugin_url: "http://dev.bukkit.org/media/files/903/664/SkyWars1.0.0.jar",
-    plugin_md5: "e3bfa0965fda6a70ce124d6c91e77def"
+    plugin_filename: "SkyWarsReloaded2.8.5.jar",
+    plugin_url: "https://www.spigotmc.org/resources/skywarsreloaded.15464/download?version=63881",
+    plugin_md5: "4bc003a590540a6a0b32b1e56fc18750"
   }
+
+
+
+
+
